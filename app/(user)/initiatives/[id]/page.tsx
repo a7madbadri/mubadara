@@ -17,7 +17,7 @@ import InitiativeCarousel from "../components/InitiativeCarousel";
 import { redirect, usePathname, useRouter } from "next/navigation";
 import { useDemo } from "@/context/demo-context";
 
-function Initiative({ params }: { params: Promise<{ id: string }> }) {
+function Initiative() {
   const { getInitiativeById, getActivitiesByInitiative } = useDemo();
   const pathname = usePathname();
   const router = useRouter();
